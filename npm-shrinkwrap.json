@@ -1,0 +1,11 @@
+{
+  "name": "calcify",
+  "version": "0.0.0",
+  "dependencies": {
+    "parseon": {
+      "version": "0.0.0",
+      "from": "parseon@0.0.0",
+      "resolved": "https://registry.npmjs.org/parseon/-/parseon-0.0.0.tgz"
+    }
+  }
+}

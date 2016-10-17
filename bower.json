@@ -1,0 +1,29 @@
+{
+  "name": "calcify",
+  "version": "0.0.0",
+  "description": "Stringify JSON with standard structure.",
+  "main": "calcify.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stringify",
+    "json",
+    "standard",
+    "structure",
+    "prettify",
+    "calcify"
+  ],
+  "homepage": "https://github.com/volkovasystems/calcify",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parseon": "^0.0.0"
+  }
+}
