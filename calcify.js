@@ -34,6 +34,9 @@
 			"file": "calcify.js",
 			"module": "calcify",
 			"author": "Richeve S. Bebedor",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/calcify.git",
 			"test": "calcify-test.js",
@@ -52,17 +55,9 @@
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var parseon = require( "parseon" );
-}
+const parseon = require( "parseon" );
 
-if( typeof window != "undefined" &&
-	!( "parseon" in window ) )
-{
-	throw new Error( "parseon is not defined" );
-}
-
-var calcify = function calcify( object ){
+const calcify = function calcify( object ){
 	/*;
 		@meta-configuration:
 			{
@@ -84,6 +79,4 @@ var calcify = function calcify( object ){
 	return JSON.stringify( object, null, "\t" );
 };
 
-if( typeof module != "undefined" ){
-	module.exports = calcify;
-}
+module.exports = calcify;

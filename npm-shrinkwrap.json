@@ -1,11 +1,42 @@
 {
   "name": "calcify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "dependencies": {
     "parseon": {
-      "version": "0.0.0",
-      "from": "parseon@0.0.0",
-      "resolved": "https://registry.npmjs.org/parseon/-/parseon-0.0.0.tgz"
+      "version": "0.1.0",
+      "from": "parseon@latest",
+      "resolved": "https://registry.npmjs.org/parseon/-/parseon-0.1.0.tgz",
+      "dependencies": {
+        "krumb": {
+          "version": "0.0.0",
+          "from": "krumb@latest",
+          "resolved": "https://registry.npmjs.org/krumb/-/krumb-0.0.0.tgz"
+        },
+        "protype": {
+          "version": "0.4.0",
+          "from": "protype@latest",
+          "resolved": "https://registry.npmjs.org/protype/-/protype-0.4.0.tgz",
+          "dependencies": {
+            "cemento": {
+              "version": "0.3.0",
+              "from": "cemento@latest",
+              "resolved": "https://registry.npmjs.org/cemento/-/cemento-0.3.0.tgz",
+              "dependencies": {
+                "harden": {
+                  "version": "0.7.0",
+                  "from": "harden@latest",
+                  "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+                }
+              }
+            },
+            "harden": {
+              "version": "0.7.0",
+              "from": "harden@latest",
+              "resolved": "https://registry.npmjs.org/harden/-/harden-0.7.0.tgz"
+            }
+          }
+        }
+      }
     }
   }
 }
