@@ -5,7 +5,7 @@
 		The MIT License (MIT)
 		@mit-license
 
-		Copyright (@c) 2016 Richeve Siodina Bebedor
+		Copyright (@c) 2017 Richeve Siodina Bebedor
 		@email: richeve.bebedor@gmail.com
 
 		Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -73,7 +73,7 @@ const calcify = function calcify( object ){
 		object = parseon( object );
 
 	}catch( error ){
-		throw new Error( "error validating object, " + error.message );
+		throw new Error( `error reparsing object, ${ error }` );
 	}
 
 	return JSON.stringify( object, null, "\t" );

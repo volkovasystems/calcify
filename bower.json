@@ -1,8 +1,8 @@
 {
   "name": "calcify",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Stringify JSON with standard structure.",
-  "main": "calcify.js",
+  "main": "calcify.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -25,6 +25,6 @@
     "tests"
   ],
   "dependencies": {
-    "parseon": "^0.1.0"
+    "parseon": "^0.2.0"
   }
 }
