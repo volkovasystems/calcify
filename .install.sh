@@ -1,5 +1,6 @@
 yarn add \
 babel-runtime \
+circular-json \
 parseon \
 --save && \
 yarn add \
@@ -11,5 +12,6 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
+circular-json \
 parseon \
 --save

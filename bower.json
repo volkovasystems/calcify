@@ -1,6 +1,6 @@
 {
   "name": "calcify",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Stringify JSON with standard structure.",
   "main": "calcify.deploy.js",
   "authors": [
@@ -25,6 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "parseon": "^0.2.0"
+    "circular-json": "^0.3.1",
+    "parseon": "^0.3.0"
   }
 }

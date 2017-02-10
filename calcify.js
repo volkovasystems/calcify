@@ -50,11 +50,13 @@
 
 	@include:
 		{
+			"json": "circular-json",
 			"parseon": "parseon"
 		}
 	@end-include
 */
 
+const json = require( "circular-json" );
 const parseon = require( "parseon" );
 
 const calcify = function calcify( object ){
@@ -73,10 +75,10 @@ const calcify = function calcify( object ){
 		object = parseon( object );
 
 	}catch( error ){
-		throw new Error( `error reparsing object, ${ error }` );
+		throw new Error( `error reparsing object, ${ error.stack }` );
 	}
 
-	return JSON.stringify( object, null, "\t" );
+	return json.stringify( object, null, "\t" );
 };
 
 module.exports = calcify;
