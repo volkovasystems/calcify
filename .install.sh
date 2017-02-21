@@ -14,4 +14,5 @@ webpack \
 bower install \
 circular-json \
 parseon \
---save
+--save \
+--force-latest
