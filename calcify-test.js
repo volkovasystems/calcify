@@ -1,5 +1,7 @@
-"use strict";
 
+const assert = require( "assert" );
 const calcify = require( "./calcify.js" );
 
-console.log( calcify( { "name": "simple" } ) );
+assert.ok( calcify( global ) );
+
+console.log( "ok" );

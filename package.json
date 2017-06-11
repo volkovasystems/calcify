@@ -1,6 +1,6 @@
 {
   "name": "calcify",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Stringify JSON with standard structure.",
   "main": "calcify.js",
   "support": "calcify.support.js",
@@ -19,7 +19,6 @@
     "json",
     "standard",
     "structure",
-    "prettify",
     "calcify"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
@@ -33,15 +32,15 @@
   "homepage": "https://github.com/volkovasystems/calcify#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "circular-json": "^0.3.1",
-    "parseon": "^0.6.0"
+    "jnfy": "^0.0.0",
+    "parseon": "^0.7.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-core": "^6.24.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.0",
-    "source-map-loader": "^0.2.0",
-    "webpack": "^2.3.0"
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.1"
   }
 }

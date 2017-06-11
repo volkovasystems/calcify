@@ -50,13 +50,13 @@
               
               	@include:
               		{
-              			"json": "circular-json",
+              			"jnfy": "jnfy",
               			"parseon": "parseon"
               		}
               	@end-include
               */
 
-var json = require("circular-json");
+var jnfy = require("jnfy");
 var parseon = require("parseon");
 
 var calcify = function calcify(object) {
@@ -75,10 +75,10 @@ var calcify = function calcify(object) {
 		object = parseon(object);
 
 	} catch (error) {
-		throw new Error("error reparsing object, " + error.stack);
+		throw new Error("cannot re-parse object, " + error.stack);
 	}
 
-	return json.stringify(object, null, "\t");
+	return jnfy(object, null, "\t");
 };
 
 module.exports = calcify;

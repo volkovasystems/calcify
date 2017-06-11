@@ -7,7 +7,6 @@ module.exports = {
 	"entry": "./calcify.support.js",
 	"resolve": {
 		"descriptionFiles": [
-			".bower.json",
 			"bower.json",
 			"package.json"
 		],
