@@ -2,6 +2,6 @@
 const assert = require( "assert" );
 const calcify = require( "./calcify.js" );
 
-assert.ok( calcify( { "hello": "world" } ) );
+assert.equal( typeof calcify( { "hello": "world" } ), "string", "should return 'string'" );
 
 console.log( "ok" );
