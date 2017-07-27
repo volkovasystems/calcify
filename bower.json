@@ -1,32 +1,32 @@
 {
-  "name": "calcify",
-  "version": "0.10.0",
-  "description": "Stringify JSON with standard structure.",
-  "main": "calcify.deploy.js",
-  "support": "calcify.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "stringify",
-    "json",
-    "standard",
-    "structure",
-    "calcify"
-  ],
-  "homepage": "https://github.com/volkovasystems/calcify",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jnfy": "^0.2.0",
-    "parseon": "^0.9.0"
-  }
+	"name": "calcify",
+	"version": "0.11.0",
+	"description": "Stringify JSON with standard structure.",
+	"main": "calcify.deploy.js",
+	"support": "calcify.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"stringify",
+		"json",
+		"standard",
+		"structure",
+		"calcify"
+	],
+	"homepage": "https://github.com/volkovasystems/calcify",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"jnfy": "^0.3.0",
+		"parseon": "^0.10.0"
+	}
 }
