@@ -66,6 +66,14 @@ const calcify = require( "./calcify.js" );
 
 describe( "calcify", ( ) => {
 
+	describe( "`calcify( { 'hello': 'world' } )`", ( ) => {
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof calcify( { "hello": "world" } ) == "string", true );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

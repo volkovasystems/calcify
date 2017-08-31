@@ -70,6 +70,14 @@ const path = require( "path" );
 
 describe( "calcify", ( ) => {
 
+	describe( "`calcify( { 'hello': 'world' } )`", ( ) => {
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof calcify( { "hello": "world" } ) == "string", true );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +86,15 @@ describe( "calcify", ( ) => {
 //: @client:
 
 describe( "calcify", ( ) => {
+
+	describe( "`calcify( { 'hello': 'world' } )`", ( ) => {
+		it( "should return string type", ( ) => {
+
+			assert.equal( typeof calcify( { "hello": "world" } ) == "string", true );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +103,25 @@ describe( "calcify", ( ) => {
 //: @bridge:
 
 describe( "calcify", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`calcify( { 'hello': 'world' } )`", ( ) => {
+		it( "should return string type", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof calcify( { "hello": "world" } ) == "string";
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge

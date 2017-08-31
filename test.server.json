@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-29T04:24:29.837Z",
-    "end": "2017-08-29T04:24:29.837Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-31T03:11:40.243Z",
+		"end": "2017-08-31T03:11:40.252Z",
+		"duration": 9
+	},
+	"tests": [
+		{
+			"title": "should return string type",
+			"fullTitle": "calcify `calcify( { 'hello': 'world' } )` should return string type",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return string type",
+			"fullTitle": "calcify `calcify( { 'hello': 'world' } )` should return string type",
+			"duration": 3,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

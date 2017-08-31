@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-31T03:11:41.617Z",
+	"end": "2017-08-31T03:12:26.834Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "calcify",
+			"duration": 0,
+			"start": "2017-08-31T03:12:26.554Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "calcify",
+			"duration": 99,
+			"start": "2017-08-31T03:12:26.554Z",
+			"end": "2017-08-31T03:12:26.653Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-31T03:12:26.555Z",
+					"end": "2017-08-31T03:12:26.556Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "calcify",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-08-31T03:12:26.652Z",
+					"end": "2017-08-31T03:12:26.653Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "calcify",
+					"associatedTest": "should return string type"
+				},
+				{
+					"start": "2017-08-31T03:12:26.653Z",
+					"end": "2017-08-31T03:12:26.653Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "calcify"
+				}
+			]
+		},
+		{
+			"name": "`calcify( { 'hello': 'world' } )`",
+			"duration": 98,
+			"start": "2017-08-31T03:12:26.555Z",
+			"end": "2017-08-31T03:12:26.653Z",
+			"tests": [
+				{
+					"name": "should return string type",
+					"start": "2017-08-31T03:12:26.555Z",
+					"end": "2017-08-31T03:12:26.652Z",
+					"duration": 97,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

@@ -24,5 +24,9 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"jnfy": "^0.3.0",
+		"parseon": "^0.10.0"
+	}
 }
